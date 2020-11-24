@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="lib/jquery-3.5.1.min.js"></script>
+        <script src="script.js"></script>
         <title>Sebastian Doe | Free to Use Photographs</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
@@ -10,21 +12,29 @@
         <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#000000">
         <meta name="msapplication-TileColor" content="#f3f3f3">
         <meta name="theme-color" content="#f3f3f3">
     </head>
-    <body>
-        <header>
-            <a href="/free-to-use" class="headerLink">Sebastian Doe Photography</a>
-            <div class="links">
-                <a href="/free-to-use" class="link selected">Home</a>
-            </div>
-        </header>
+    <body style="display: none;">
         <main>
-            <h1>Error 404</h1>
-            <span class="extra">Sorry, we couldn't find the page you were looking for.</span>
+            <header>
+                <a href="/free-to-use" class="headerLink">Sebastian Doe Photography</a>
+                <div class="links">
+                    <a href="/free-to-use" class="link selected">Home</a>
+                </div>
+            </header>
+            <h1>Browse</h1><br>
+            <div class="filterList">
+                <span class="subtitle">Filters</span>
+            </div>
+            <div class="photoList">
+                <span class="subtitle">Photos</span><br><br>
+            </div>
         </main>
+        <script src="lib/tooltip.js"></script>
+        <script src="database.js"></script>
+        <script>populatePhotoList();</script>
     </body>
 </html>
