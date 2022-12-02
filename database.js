@@ -103,7 +103,7 @@ function requestAlbumInfo() {
 }
 
 function copyLicenseText() {
-    copyToClipboard('By <a href="https://sebastiandoe5.github.io/free-to-use" target="_blank">Sebastian Doe</a> - Licensed for reuse under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.');
+    copyToClipboard('By <a href="https://git.sebdoe.com/free-to-use" target="_blank">Sebastian Doe</a> - Licensed for reuse under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.');
 }
 
 function processRequestAlbum(response_text) {
